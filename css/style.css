@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    /* background-color: rgb(17, 17, 17); */
+    background-color: rgb(17, 17, 17);
 }
 
 
@@ -18,18 +20,41 @@ body {
 }
 
 .header-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
-.primary-btn {
+.btn-primary {
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
     border-radius: 42px;
+    padding: 0.8rem 1.8rem;
     background: rgb(230, 83, 60);
+    border: none;
+}
+
+.btn-secondary {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid grey;
+    border-radius: 42px;
+    padding: 0.8rem 1.8rem;
+    margin-left: 1rem;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+
 }
 
 
@@ -38,5 +63,149 @@ body {
 
 /* ------------  navbar style start here  --------------------*/
 
+.header-container {
+    height: 715px;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+.logo-title {
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.nav-bar {
+    margin: 2.8rem 0;
+}
+
+.main-manu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    border: 0.001rem outset rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-item a:hover {
+    border-radius: 2rem;
+    background: rgb(230, 83, 60);
+    padding: 0.4rem 1rem;
+    transform: scale(0.2);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
+.bars-icon {
+    display: none;
+}
+
 
 /* -/////////////  navbar style ended here  //////////////////-*/
+
+/* ------- header hero banner section style start here ------------*/
+
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.hero-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+#hero-shape {
+    font-family: Dancing Script;
+    font-size: 6rem;
+}
+
+.hero-info p {
+    margin: 1.6rem 0;
+
+}
+
+.costomer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.8rem;
+    backdrop-filter: blur(1rem);
+    background: rgba(255, 255, 255, 0.1);
+    width: 8rem;
+    height:5rem;
+    position: relative;
+    margin-top: 50px;
+}
+
+.free-video-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+    box-sizing: border-box;
+
+}
+
+.hero-image img {
+    height: 580px;
+}
+
+
+/* ////////// header hero banner section style ended ///////////////*/
+
+
+
+
+
+/* ------ Responsive Area style here start ------------*/
+
+
+/* ------ Mobile responsive style here start .......... */
+
+@media screen and (max-width:576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .bars-icon {
+        display: block;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    /*------ hero banner ----*/
+    .hero-banner {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+}
