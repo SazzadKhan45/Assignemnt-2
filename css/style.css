@@ -131,7 +131,8 @@ p {
     gap: 5rem;
     width: 100%;
 }
-.hero-info{
+
+.hero-info {
     width: 50%;
 }
 
@@ -168,10 +169,10 @@ p {
     background: rgba(255, 255, 255, 0.1);
     margin-left: 80%;
     margin-top: 10rem;
-    
+
 }
 
-.costomer-info-botom{
+.costomer-info-botom {
     display: flex;
     gap: 0.8rem;
     justify-content: center;
@@ -189,7 +190,7 @@ p {
     margin-top: 10rem;
 }
 
-.circel{
+.circel {
     height: 2rem;
     width: 2rem;
     border-radius: 2rem;
@@ -219,10 +220,67 @@ p {
 }
 
 
-/* ////////// header hero banner section style ended ///////////////*/
+/* ////////// header hero banner section style ended /////////////*/
+
+/* --- Change Your Habits section style here -------- */
+
+.habits-info {
+    text-align: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.habits-info h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: .8rem;
+}
+
+.habits-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.profile-info{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.profile h4 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 2.4rem 0 .3rem 0;
+}
+
+.profile p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.3px;
+}
 
 
-
+/* //////// Change Your Habits section style here  /////////// */
 
 
 /* ------ Responsive Area style here start ------------*/
@@ -242,30 +300,63 @@ p {
     }
 
     /*------ hero banner ----*/
+
+    .header-container {
+        height: 1010px;
+    }
+
     .hero-banner {
         flex-direction: column;
     }
 
-    .hero-title {
-        font-size: 3rem;
+    .hero-info h1 {
+        font-size: 2.2rem;
     }
-    .hero-info{
-        width: 100%;
-    }
-    .hero-image{
+
+    .hero-info {
         width: 100%;
     }
 
-    .btn-primary, .btn-secondary{
+    .hero-image {
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
         font-size: 1rem;
-    } 
-    .btn-secondary{
+    }
+
+    .btn-secondary {
         margin-left: 2px;
     }
-    .costomer-info-top{
+
+    .costomer-info-top {
         margin-left: 60%;
     }
-    .costomer-info-botom{
+
+    .costomer-info-botom {
         margin-left: 10%;
+    }
+
+    /* ---- Change Your Habits -----*/
+
+    .change-your-habit{
+        margin-top: 8rem;
+    }
+
+    .habits-info h2{
+        font-size: 2rem;
+    }
+
+    .profile-info{
+        flex-direction: column;
+    }
+
+    .profile p{
+        padding: 0 6.2rem;
+    }
+
+    .habits-info br{
+        display: none;
     }
 }
