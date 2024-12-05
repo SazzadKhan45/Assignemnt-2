@@ -246,7 +246,7 @@ p {
     line-height: 1.5rem;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     gap: 2.5rem;
     justify-content: space-between;
@@ -281,6 +281,138 @@ p {
 
 
 /* //////// Change Your Habits section style here  /////////// */
+
+/* ---- Run an Extra Mile Easily section style start here -------*/
+
+.Run-extra {
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    padding: 2rem 2.5rem;
+    margin: 6rem 0;
+}
+
+.run-extra-info,
+.run-away {
+    width: 50%;
+    padding-left: 1.5rem;
+}
+
+.run-extra-info h2 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+
+
+}
+
+.run-extra-info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: .9rem 0 2rem 0;
+}
+
+.run-away {
+    width: 50%;
+}
+
+.run-away img {
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+
+/* ////// Run an Extra Mile Easily section style ended ///////// */
+
+/* ---- Our Subscription section style start here  ------*/
+
+.subscribe-title h2 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.subscribe-title p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.Packs-Time {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.monthly-packs {
+    background: rgba(216, 216, 216, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 3rem;
+    font-family: Inter;
+}
+
+.monthly-packs h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+}
+
+.monthly-packs hr {
+    margin: 1rem auto;
+    width: 90%;
+}
+
+.monthly-packs h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+}
+
+.monthly-packs h2 {
+    color: rgb(243, 20, 20);
+    margin: 1rem 0;
+    font-weight: bolder;
+}
+
+.bdt {
+    color: rgb(255, 255, 255);
+}
+
+.monthly-packs p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.subcribe {
+    width: 80%;
+}
+
+.six-month{
+    background: white;
+}
+
+.six-month h3, .six-month h4, .six-month p, .six-month span{
+    color: black;
+}
+
+
+/* ////// Our Subscription section style start here  /////////*/
 
 
 /* ------ Responsive Area style here start ------------*/
@@ -340,23 +472,58 @@ p {
 
     /* ---- Change Your Habits -----*/
 
-    .change-your-habit{
+    .change-your-habit {
         margin-top: 8rem;
     }
 
-    .habits-info h2{
+    .habits-info h2 {
         font-size: 2rem;
     }
 
-    .profile-info{
+    .profile-info {
         flex-direction: column;
     }
 
-    .profile p{
+    .profile p {
         padding: 0 6.2rem;
     }
 
-    .habits-info br{
+    .habits-info br {
         display: none;
+    }
+
+
+    /* ----- Run an extra Mile Easily --- */
+
+    .Run-extra-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Run-extra {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .run-extra-info,
+    .run-away {
+        width: 100%;
+    }
+
+    .run-extra-info h2 {
+        font-size: 2rem;
+    }
+
+    .join-us {
+        padding: 1rem 6rem;
+    }
+
+    /* --- Our Membership ----*/
+
+    .Packs-Time{
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        margin: 0 auto;
     }
 }
