@@ -9,14 +9,19 @@
 
 body {
     background-color: rgb(17, 17, 17);
+    max-width: 1400px;
+    margin: 0 auto;
+    border-left: 1px solid rgb(66, 66, 66);
+    border-right: 1px solid rgb(66, 66, 66);
 }
 
 
 /* --------------  Common style start -----------------------*/
 
 .body-container {
-    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
+
 }
 
 .header-container {
@@ -77,7 +82,7 @@ p {
 }
 
 .nav-bar {
-    margin: 2.8rem 0;
+    padding-top: 2.8rem;
 }
 
 .main-manu {
@@ -334,10 +339,16 @@ p {
 
 /* ---- Our Subscription section style start here  ------*/
 
+.subscribetion {
+    width: 95%;
+    margin: 0 auto;
+}
+
 .subscribe-title h2 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
     text-align: center;
+    font-family: Inter;
 }
 
 .subscribe-title p {
@@ -403,20 +414,332 @@ p {
     width: 80%;
 }
 
-.six-month{
+.six-month {
     background: white;
 }
 
-.six-month h3, .six-month h4, .six-month p, .six-month span{
+.six-month h3,
+.six-month h4,
+.six-month p,
+.six-month span {
     color: black;
 }
 
 
 /* ////// Our Subscription section style start here  /////////*/
 
+/* ----- BMI Calculator section style start here --------- */
 
-/* ------ Responsive Area style here start ------------*/
+.BMI-Title {
+    padding: 0 15rem;
+}
 
+.BMI-Title h3 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 120%;
+    margin-top: 4rem;
+}
+
+.BMI-Title p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+
+.BMI-container {
+    background: rgb(34, 34, 34);
+}
+
+.BMI-info {
+    display: flex;
+    gap: 6rem;
+    padding: 4rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BMI-Table h4,
+.BMI-Form h4 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 120%;
+    padding-bottom: 3rem;
+}
+
+
+.BMI-table {
+    border-collapse: collapse;
+}
+
+.BMI-table td,
+.BMI-table th {
+    border: 1px solid gray;
+    padding: 1rem 2.5rem;
+}
+
+thead th {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+tbody th {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.BMI-Table {
+    width: 40%;
+}
+
+.BMI-Form {
+    width: 55%;
+}
+
+.BMI-Form h4 {
+    margin-bottom: -1.5rem;
+}
+
+.form-container {
+    margin-top: 2rem;
+}
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-box input,
+.input-box select {
+    border: none;
+    padding: 0.8rem 1rem;
+    width: 40%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+
+}
+
+#Select-activity {
+    width: 92%;
+    padding-right: 1rem;
+}
+
+.option-box {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50%;
+}
+
+/* ///////  BMI Calculator section style ended  /////////////*/
+
+/*---------- Meet Our Team section style start ------------*/
+
+.Meet-Our-Team h2 {
+    margin-top: 5rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-family: Inter;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Team-title p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0.8rem 0 4rem 0;
+}
+
+
+.Teams-members {
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.Teams-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.member-1 {
+    background-image: url(../images/trainer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-2 {
+    background-image: url(../images/trainer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-3 {
+    background-image: url(../images/trainer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-4 {
+    background-image: url(../images/trainer4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-5 {
+    background-image: url(../images/trainer5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-6 {
+    background-image: url(../images/trainer6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 18px;
+}
+
+.member-1 h5,
+.member-2 h5,
+.member-3 h5,
+.member-4 h5,
+.member-5 h5,
+.member-6 h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: Inter;
+}
+
+.member-1 p,
+.member-2 p,
+.member-3 p,
+.member-4 p,
+.member-5 p,
+.member-6 p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-family: Inter;
+    margin-top: 0.3rem;
+}
+
+.Trainer-info {
+    padding-top: 240px;
+    padding-left: 1.5rem;
+}
+
+
+/*///////// Meet Our Team section style ended /////////////////*/
+
+
+/* ----- Footer section style here -----------*/
+
+.footer-container {
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 5rem;
+}
+
+.footer-info {
+    display: flex;
+    padding: 5rem 0;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    margin-top: 1.4rem;
+    text-align: justify;
+    padding-right: 1.5rem;
+}
+
+.Get-started,
+.footer-logo {
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.Get-started h4 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 1rem;
+
+}
+
+.Get-started p {
+    margin-bottom: 1rem;
+}
+
+.Get-started p a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.copy-title p {
+    text-align: center;
+    padding: 2rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+}
+
+/* /////// Footer section style here ///////////*/
 
 /* ------ Mobile responsive style here start .......... */
 
@@ -520,10 +843,43 @@ p {
 
     /* --- Our Membership ----*/
 
-    .Packs-Time{
+    .Packs-Time {
         flex-direction: column;
         gap: 2rem;
         width: 90%;
         margin: 0 auto;
     }
+
+    /* ---- BMI Calculator style  */
+
+    .BMI-Title {
+        padding: 2rem;
+    }
+
+    br {
+        display: none;
+    }
+
+    .BMI-info {
+        flex-direction: column;
+    }
+
+
+
+
+    /* ---- Meet Our Team  ------ */
+    .Teams-members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ---- Footer section  */
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .BMI-Table, .BMI-Form{
+        width: 100%;
+    }
+
 }
